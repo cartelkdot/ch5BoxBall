@@ -37,7 +37,7 @@ public class boxball
      * @param yPos  the vertical coordinate of the ball
      * @param ballDiameter  the diameter (in pixels) of the ball
      * @param ballColor  the color of the ball
-     * 
+
      * @param drawingCanvas  the canvas to draw this ball on
      */
     public boxball(int xPos, int yPos, int ballDiameter, Color ballColor,
