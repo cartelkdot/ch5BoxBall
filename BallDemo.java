@@ -22,6 +22,10 @@ public class BallDemo
     {
         myCanvas = new Canvas("Ball Demo", 600, 500);
     }
+    
+    public void BouncingBall(){
+        boxball ball = new ball();
+    }
 
     /**
      * Simulate two bouncing balls

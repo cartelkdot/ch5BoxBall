@@ -95,10 +95,10 @@ public class boxball
         xPosition += xSpeed;
         
                // check if it has hit the ground
-        //      if(yPosition >= (groundPosition - diameter) && ySpeed > 0) {
-            // yPosition = (int)(groundPosition - diameter);
-            // ySpeed = -ySpeed + ballDegredation;
-            //}
+        if(xPosition + diameter > rightWall) {
+             xPosition = rightWall - diameter;
+                xSpeed = xSpeed * -1;
+            }
         
             //Wall Checks
             
