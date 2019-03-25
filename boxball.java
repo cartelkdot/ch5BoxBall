@@ -64,6 +64,7 @@ public class boxball
         int side2 = -300;
         int top = -400;
         
+        myCanvas.setVisible(true);
         
         return;
     }
