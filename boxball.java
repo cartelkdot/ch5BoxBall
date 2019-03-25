@@ -23,9 +23,12 @@ public class boxball
     private int xPosition;
     private int yPosition;
     private final int groundPosition;      // y position of ground
+    private final int upperWall;
+    private final int leftWall;
+    private final int rightWall;
     private Canvas canvas;
     private int ySpeed = 1;                // initial downward speed
-
+    private int xSpeed = 7;
     
     /**
      * Constructor for objects of class BouncingBall
@@ -34,7 +37,7 @@ public class boxball
      * @param yPos  the vertical coordinate of the ball
      * @param ballDiameter  the diameter (in pixels) of the ball
      * @param ballColor  the color of the ball
-     * @param groundPos  the position of the ground (where the wall will bounce)
+     * 
      * @param drawingCanvas  the canvas to draw this ball on
      */
     public boxball(int xPos, int yPos, int ballDiameter, Color ballColor,
@@ -43,11 +46,14 @@ public class boxball
         yPosition = yPos;
         color = ballColor;
         diameter = ballDiameter;
-        groundPosition = groundPos;
+        //groundPosition = groundPos;
         canvas = drawingCanvas;
-        newcanvas = new Canvas("Box Ball" , 600, 600);
+        leftWall = 0;
+        rightWall = 600;
+        upperWall = 0;
+        groundPosition = 500;
                             
-        }
+    }
     
             
 
