@@ -88,25 +88,48 @@ public class boxball
         // remove from canvas at the current position
         erase();
         
+        // compute new positon
+        //ySpeed += GRAVITY;
         
+        yPosition += ySpeed;
+        xPosition += xSpeed;
         
+               // check if it has hit the ground
+        //      if(yPosition >= (groundPosition - diameter) && ySpeed > 0) {
+            // yPosition = (int)(groundPosition - diameter);
+            // ySpeed = -ySpeed + ballDegredation;
+            //}
+        
+            //Wall Checks
+            
+        if (xPosition < leftWall){
+          xSpeed = -xSpeed;
+        }
+        if (xPosition > rightWall){
+            xSpeed = -xSpeed;
+        }
+        if (xPosition < upperWall) {
+            ySpeed = -ySpeed;
+        }
+        if (yPosition > groundPosition ) {
+            ySpeed = -ySpeed;
+        }
+        // draw again at new position
+        draw();
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     *return the horizontal position of this ball
      */
-    public void bounce()
+    public int getXPosition()
     {
-        int ground = 400;
-        int side = 300;
-        int side2 = -300;
-        int top = -400;
-        
-        
-        
-        return;
+        return xPosition;
+    }
+    /**
+     * return the vertical position of this ball
+     */
+    public int getYPosition()
+    {
+        return yPosition;
     }
 }
