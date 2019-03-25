@@ -11,7 +11,7 @@ import java.awt.Color;
  * @version 2011.07.31
  */
 
-public class BallDemo   
+public class BallDemo 
 {
     private Canvas myCanvas;
 

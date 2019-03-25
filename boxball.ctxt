@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=boxball
+comment0.text=\r\n\ moves\ inside\ the\ box,\r\n\ bounces\ off\ the\ walls\ of\ the\ box\ so\ that\ the\ ball\ always\ stays\ inside.\r\n\ The\ initial\ speed\ of\ the\ ball\ should\ be\ random,\ and\ not\ vertical\ or\ horizontal\r\n\ The\ initial\ position\ of\ the\ ball\ should\ be\ random.\r\n\ The\ boxBounce\ constructor\ should\ have\ a\ parameter\ that\ specifies\ how\ many\ balls\ are\ in\ the\ box.\r\n\r\n\ @author\ Kywajn\ Alston\r\n\ @version\ 4.2.0\r\n
+comment1.params=xPos\ yPos\ ballDiameter\ ballColor\ groundPos\ drawingCanvas
+comment1.target=boxball(int,\ int,\ int,\ java.awt.Color,\ int,\ Canvas)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BouncingBall\r\n\r\n\ @param\ xPos\ \ the\ horizontal\ coordinate\ of\ the\ ball\r\n\ @param\ yPos\ \ the\ vertical\ coordinate\ of\ the\ ball\r\n\ @param\ ballDiameter\ \ the\ diameter\ (in\ pixels)\ of\ the\ ball\r\n\ @param\ ballColor\ \ the\ color\ of\ the\ ball\r\n\ @param\ groundPos\ \ the\ position\ of\ the\ ground\ (where\ the\ wall\ will\ bounce)\r\n\ @param\ drawingCanvas\ \ the\ canvas\ to\ draw\ this\ ball\ on\r\n
+comment2.params=
+comment2.target=void\ bounce()
+comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+numComments=3

@@ -55,7 +55,42 @@ public class boxball
                             
     }
     
-            
+    
+    /**
+     * 
+     * Draw this ball at its current positon onto the canvas.
+     * 
+     */
+    public void draw()
+    {
+       canvas.setForegroundColor(color);
+       canvas.fillCircle(xPosition, yPosition, diameter);
+        
+    }
+    
+    
+    
+    /**
+     * Erase this ball at its current position.
+     */
+    public void erase()
+    {
+        canvas.eraseCircle(xPosition, yPosition, diameter);
+    }
+    
+    /**
+     * Move this ball according to its position and speed and redraw.
+     * 
+     */
+    
+    public void move()
+    {
+        // remove from canvas at the current position
+        erase();
+        
+        
+        
+    }
 
     /**
      * An example of a method - replace this comment with your own
@@ -70,7 +105,7 @@ public class boxball
         int side2 = -300;
         int top = -400;
         
-        myCanvas.setVisible(true);
+        
         
         return;
     }
