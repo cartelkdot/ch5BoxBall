@@ -24,7 +24,12 @@ public class BallDemo
     }
     
     public void BouncingBall(){
-        boxball ball = new ball();
+        boxball ball = new boxball(300, 10, 25,Color.RED, myCanvas);
+        ball.draw();
+        while (true) {
+            ball.move();
+            myCanvas.wait(50);
+        }
     }
 
     /**

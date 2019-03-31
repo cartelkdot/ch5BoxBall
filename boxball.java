@@ -1,6 +1,7 @@
  import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.*;
+import java.awt.Color;
 /**
  * moves inside the box,
  * bounces off the walls of the box so that the ball always stays inside.
@@ -29,6 +30,7 @@ public class boxball
     private Canvas canvas;
     private int ySpeed = 1;                // initial downward speed
     private int xSpeed = 7;
+    private Color RED;
     
     /**
      * Constructor for objects of class BouncingBall
